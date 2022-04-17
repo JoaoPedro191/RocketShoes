@@ -1,0 +1,144 @@
+:root {
+  --button: #FF0000;
+  --main-background:  #C4C4C4;
+  --background: #E5E5E5;
+  --text: #000;
+  --footer: #000;
+  --text-description: #9C9696;
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg,  var(--background) 35%, var(--main-background) 0);
+  -webkit-font-smoothing: antialiased;
+  font-family: Roboto;
+}
+
+nav {
+  margin-top: 3.9rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul li {
+  font-size: 2.4rem;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#search{
+  padding: 1.3rem;
+   width: 22rem;
+   border-radius: 0.5rem;
+}
+#search::placeholder{
+  font-size:1.8rem ;
+}
+
+main{
+  padding-top: 12rem;
+  padding-left: 10rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.info{
+  width: 35.7rem;
+}
+
+.info h1{
+  font-weight: 700 ;
+  font-size: 6rem;
+}
+
+.info p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--text-description);
+  margin-top:  2rem;
+  margin-bottom: 2rem;
+
+}
+.info span{
+  font-weight: 700;
+  font-size: 4rem;
+  font-style: normal;
+  display: block;
+}
+.info button{
+  padding: 2.3rem  7.5rem;
+  margin-top: 2rem;
+  background: var(--button);
+  border: none;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  color: #E5E5E5;
+  border-radius: 0.5rem;
+  font-weight:700 ;
+  cursor: pointer;
+}
+
+main .right {
+  padding-right:0.8rem ;
+ 
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.images-container{
+  display: flex;
+  justify-content: space-between;
+}
+#footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
+}
+.social{
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  background: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.explore{
+  font-weight: 700;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  background: var(--footer);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff ;
+}
+
+.explore .with-icon {
+  display: flex;
+  align-items: center;
+}
+
+#footer{
+  margin-top: 2.5rem;
+  cursor: pointer;
+}
+
+.selected {
+  border-bottom: 5px solid red;
+}
